@@ -77,3 +77,18 @@ scatter.smooth(x = states$Area,
 correlationmatrix <- cor(states)
 round(correlationmatrix, 2)
 
+attach(states)
+paste("Correlation for Murder & Area: ",
+      round(cor(Murder, Area),2))
+paste("Correlation for Murder & Frost: ",
+      round(cor(Murder, Frost),2))
+paste("Correlation for Murder & HS_Grad: ",
+      round(cor(Murder, HS_Grad),2))
+paste("Correlation for Murder & Life_Exp: ",
+      round(cor(Murder, Life_Exp),2))
+paste("Correlation for Murder & Illiteracy: ",
+      round(cor(Murder, Illiteracy),2))
+paste("Correlation for Murder & Income: ",
+      round(cor(Murder, Income),2))
+paste("Correlation for Murder & Population: ",
+      round(cor(Murder, Population),2))
